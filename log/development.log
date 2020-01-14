@@ -1,0 +1,346 @@
+Started GET "/states" for ::1 at 2020-01-08 13:51:50 -0600
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/states" for ::1 at 2020-01-08 13:52:14 -0600
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/states" for ::1 at 2020-01-08 15:46:46 -0600
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateStates (20191111203410)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "states" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abbreviation" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191111203410"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20191111203443)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "username" varchar, "state_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191111203443"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddCommentToStates (20191113174319)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "states" ADD "comment" varchar[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191113174319"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-01-08 21:47:21.279472"], ["updated_at", "2020-01-08 21:47:21.279472"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/states" for ::1 at 2020-01-08 15:47:29 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StatesController#index as */*
+  [1m[36mState Load (0.3ms)[0m  [1m[34mSELECT "states".* FROM "states"[0m
+  ↳ app/controllers/states_controller.rb:5:in `index'
+Completed 200 OK in 21ms (Views: 4.1ms | ActiveRecord: 0.6ms | Allocations: 2751)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mState Load (0.2ms)[0m  [1m[34mSELECT "states".* FROM "states"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.5ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alabama"], ["abbreviation", "AL"], ["created_at", "2020-01-08 21:47:40.719985"], ["updated_at", "2020-01-08 21:47:40.719985"], ["comment", ""]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.6ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alaska"], ["abbreviation", "AK"], ["created_at", "2020-01-08 21:47:40.725603"], ["updated_at", "2020-01-08 21:47:40.725603"], ["comment", ""]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.6ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Arizona"], ["abbreviation", "AZ"], ["created_at", "2020-01-08 21:47:40.731867"], ["updated_at", "2020-01-08 21:47:40.731867"], ["comment", ""]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.6ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Arkansas"], ["abbreviation", "AR"], ["created_at", "2020-01-08 21:47:40.738580"], ["updated_at", "2020-01-08 21:47:40.738580"], ["comment", ""]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "California"], ["abbreviation", "CA"], ["created_at", "2020-01-08 21:47:40.745534"], ["updated_at", "2020-01-08 21:47:40.745534"], ["comment", ""]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.5ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Colorado"], ["abbreviation", "CO"], ["created_at", "2020-01-08 21:47:40.750480"], ["updated_at", "2020-01-08 21:47:40.750480"], ["comment", ""]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.5ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Connecticut"], ["abbreviation", "CT"], ["created_at", "2020-01-08 21:47:40.756046"], ["updated_at", "2020-01-08 21:47:40.756046"], ["comment", ""]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.7ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Delaware"], ["abbreviation", "DE"], ["created_at", "2020-01-08 21:47:40.762353"], ["updated_at", "2020-01-08 21:47:40.762353"], ["comment", ""]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.7ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Florida"], ["abbreviation", "FL"], ["created_at", "2020-01-08 21:47:40.790774"], ["updated_at", "2020-01-08 21:47:40.790774"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Georgia"], ["abbreviation", "GA"], ["created_at", "2020-01-08 21:47:40.798532"], ["updated_at", "2020-01-08 21:47:40.798532"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.5ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hawaii"], ["abbreviation", "HI"], ["created_at", "2020-01-08 21:47:40.803274"], ["updated_at", "2020-01-08 21:47:40.803274"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Idaho"], ["abbreviation", "ID"], ["created_at", "2020-01-08 21:47:40.807413"], ["updated_at", "2020-01-08 21:47:40.807413"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Illinois"], ["abbreviation", "IL"], ["created_at", "2020-01-08 21:47:40.811835"], ["updated_at", "2020-01-08 21:47:40.811835"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Indiana"], ["abbreviation", "IN"], ["created_at", "2020-01-08 21:47:40.815848"], ["updated_at", "2020-01-08 21:47:40.815848"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Iowa"], ["abbreviation", "IA"], ["created_at", "2020-01-08 21:47:40.820068"], ["updated_at", "2020-01-08 21:47:40.820068"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kansas"], ["abbreviation", "KS"], ["created_at", "2020-01-08 21:47:40.824352"], ["updated_at", "2020-01-08 21:47:40.824352"], ["comment", ""]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kentucky"], ["abbreviation", "KY"], ["created_at", "2020-01-08 21:47:40.828223"], ["updated_at", "2020-01-08 21:47:40.828223"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Louisiana"], ["abbreviation", "LA"], ["created_at", "2020-01-08 21:47:40.832119"], ["updated_at", "2020-01-08 21:47:40.832119"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Maine"], ["abbreviation", "ME"], ["created_at", "2020-01-08 21:47:40.835812"], ["updated_at", "2020-01-08 21:47:40.835812"], ["comment", ""]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Maryland"], ["abbreviation", "MD"], ["created_at", "2020-01-08 21:47:40.839480"], ["updated_at", "2020-01-08 21:47:40.839480"], ["comment", ""]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Massachusetts"], ["abbreviation", "MA"], ["created_at", "2020-01-08 21:47:40.843683"], ["updated_at", "2020-01-08 21:47:40.843683"], ["comment", ""]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Michigan"], ["abbreviation", "MI"], ["created_at", "2020-01-08 21:47:40.847668"], ["updated_at", "2020-01-08 21:47:40.847668"], ["comment", ""]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.5ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Minnesota"], ["abbreviation", "MN"], ["created_at", "2020-01-08 21:47:40.852128"], ["updated_at", "2020-01-08 21:47:40.852128"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mississippi"], ["abbreviation", "MS"], ["created_at", "2020-01-08 21:47:40.856845"], ["updated_at", "2020-01-08 21:47:40.856845"], ["comment", ""]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.5ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Missouri"], ["abbreviation", "MO"], ["created_at", "2020-01-08 21:47:40.861461"], ["updated_at", "2020-01-08 21:47:40.861461"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Montana"], ["abbreviation", "MT"], ["created_at", "2020-01-08 21:47:40.866898"], ["updated_at", "2020-01-08 21:47:40.866898"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nebraska"], ["abbreviation", "NE"], ["created_at", "2020-01-08 21:47:40.871373"], ["updated_at", "2020-01-08 21:47:40.871373"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nevada"], ["abbreviation", "NV"], ["created_at", "2020-01-08 21:47:40.875454"], ["updated_at", "2020-01-08 21:47:40.875454"], ["comment", ""]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "New Hampshire"], ["abbreviation", "NH"], ["created_at", "2020-01-08 21:47:40.892640"], ["updated_at", "2020-01-08 21:47:40.892640"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "New Jersey"], ["abbreviation", "NJ"], ["created_at", "2020-01-08 21:47:40.896542"], ["updated_at", "2020-01-08 21:47:40.896542"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "New Mexico"], ["abbreviation", "NM"], ["created_at", "2020-01-08 21:47:40.900811"], ["updated_at", "2020-01-08 21:47:40.900811"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "New York"], ["abbreviation", "NY"], ["created_at", "2020-01-08 21:47:40.904910"], ["updated_at", "2020-01-08 21:47:40.904910"], ["comment", ""]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "North Carolina"], ["abbreviation", "NC"], ["created_at", "2020-01-08 21:47:40.909334"], ["updated_at", "2020-01-08 21:47:40.909334"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "North Dakota"], ["abbreviation", "ND"], ["created_at", "2020-01-08 21:47:40.913884"], ["updated_at", "2020-01-08 21:47:40.913884"], ["comment", ""]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ohio"], ["abbreviation", "OH"], ["created_at", "2020-01-08 21:47:40.918335"], ["updated_at", "2020-01-08 21:47:40.918335"], ["comment", ""]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Oklahoma"], ["abbreviation", "OK"], ["created_at", "2020-01-08 21:47:40.922881"], ["updated_at", "2020-01-08 21:47:40.922881"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Oregon"], ["abbreviation", "OR"], ["created_at", "2020-01-08 21:47:40.927204"], ["updated_at", "2020-01-08 21:47:40.927204"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Pennsylvania"], ["abbreviation", "PA"], ["created_at", "2020-01-08 21:47:40.931566"], ["updated_at", "2020-01-08 21:47:40.931566"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rhode Island"], ["abbreviation", "RI"], ["created_at", "2020-01-08 21:47:40.936290"], ["updated_at", "2020-01-08 21:47:40.936290"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (1.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "South Carolina"], ["abbreviation", "SC"], ["created_at", "2020-01-08 21:47:40.940497"], ["updated_at", "2020-01-08 21:47:40.940497"], ["comment", ""]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "South Dakota"], ["abbreviation", "SD"], ["created_at", "2020-01-08 21:47:40.946677"], ["updated_at", "2020-01-08 21:47:40.946677"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tennessee"], ["abbreviation", "TN"], ["created_at", "2020-01-08 21:47:40.950698"], ["updated_at", "2020-01-08 21:47:40.950698"], ["comment", ""]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Texas"], ["abbreviation", "TX"], ["created_at", "2020-01-08 21:47:40.954245"], ["updated_at", "2020-01-08 21:47:40.954245"], ["comment", ""]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Utah"], ["abbreviation", "UT"], ["created_at", "2020-01-08 21:47:40.958554"], ["updated_at", "2020-01-08 21:47:40.958554"], ["comment", ""]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Vermont"], ["abbreviation", "VT"], ["created_at", "2020-01-08 21:47:40.962227"], ["updated_at", "2020-01-08 21:47:40.962227"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Virginia"], ["abbreviation", "VA"], ["created_at", "2020-01-08 21:47:40.966010"], ["updated_at", "2020-01-08 21:47:40.966010"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Washington"], ["abbreviation", "WA"], ["created_at", "2020-01-08 21:47:40.969989"], ["updated_at", "2020-01-08 21:47:40.969989"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "West Virginia"], ["abbreviation", "WV"], ["created_at", "2020-01-08 21:47:40.973935"], ["updated_at", "2020-01-08 21:47:40.973935"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wisconsin"], ["abbreviation", "WI"], ["created_at", "2020-01-08 21:47:40.977899"], ["updated_at", "2020-01-08 21:47:40.977899"], ["comment", ""]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wyoming"], ["abbreviation", "WY"], ["created_at", "2020-01-08 21:47:40.981752"], ["updated_at", "2020-01-08 21:47:40.981752"], ["comment", ""]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/states" for ::1 at 2020-01-08 15:47:52 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StatesController#index as */*
+  [1m[36mState Load (0.4ms)[0m  [1m[34mSELECT "states".* FROM "states"[0m
+  ↳ app/controllers/states_controller.rb:5:in `index'
+Completed 200 OK in 35ms (Views: 29.3ms | ActiveRecord: 1.1ms | Allocations: 13564)
+
+
+Started GET "/states" for ::1 at 2020-01-08 15:49:28 -0600
+Processing by StatesController#index as */*
+  [1m[36mState Load (0.4ms)[0m  [1m[34mSELECT "states".* FROM "states"[0m
+  ↳ app/controllers/states_controller.rb:5:in `index'
+Completed 200 OK in 64ms (Views: 63.6ms | ActiveRecord: 0.4ms | Allocations: 8314)
+
+
+Started GET "/states/7" for ::1 at 2020-01-08 15:49:34 -0600
+Processing by StatesController#show as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mState Load (0.3ms)[0m  [1m[34mSELECT "states".* FROM "states" WHERE "states"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/states_controller.rb:9:in `show'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."state_id" = ?[0m  [["state_id", 7]]
+  ↳ app/controllers/states_controller.rb:10:in `show'
+Completed 200 OK in 36ms (Views: 21.4ms | ActiveRecord: 0.9ms | Allocations: 8272)
+
+
+Started GET "/states/26" for ::1 at 2020-01-08 15:49:48 -0600
+Processing by StatesController#show as */*
+  Parameters: {"id"=>"26"}
+  [1m[36mState Load (0.2ms)[0m  [1m[34mSELECT "states".* FROM "states" WHERE "states"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/states_controller.rb:9:in `show'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."state_id" = ?[0m  [["state_id", 26]]
+  ↳ app/controllers/states_controller.rb:10:in `show'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1569)
+
+
