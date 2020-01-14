@@ -344,3 +344,208 @@ Processing by StatesController#show as */*
 Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1569)
 
 
+  [1m[35m (10.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (279.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "module_4_backend_project_development"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Crime-Stats_backend_test"[0m
+  [1m[35m (690.8ms)[0m  [1m[35mCREATE DATABASE "module_4_backend_project_development" ENCODING = 'unicode'[0m
+  [1m[35m (494.5ms)[0m  [1m[35mCREATE DATABASE "Crime-Stats_backend_test" ENCODING = 'unicode'[0m
+  [1m[35m (33.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4842261726252998985)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateStates (20191111203410)
+  [1m[35m (3.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "states" ("id" bigserial primary key, "name" character varying, "abbreviation" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (5.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191111203410"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20191111203443)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "content" character varying, "username" character varying, "state_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (2.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191111203443"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddCommentToStates (20191113174319)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.5ms)[0m  [1m[35mALTER TABLE "states" ADD "comment" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191113174319"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-01-14 22:58:14.788335"], ["updated_at", "2020-01-14 22:58:14.788335"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4842261726252998985)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mState Load (1.4ms)[0m  [1m[34mSELECT "states".* FROM "states"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.6ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Alabama"], ["abbreviation", "AL"], ["created_at", "2020-01-14 22:58:20.654586"], ["updated_at", "2020-01-14 22:58:20.654586"], ["comment", ""]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Alaska"], ["abbreviation", "AK"], ["created_at", "2020-01-14 22:58:20.658200"], ["updated_at", "2020-01-14 22:58:20.658200"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Arizona"], ["abbreviation", "AZ"], ["created_at", "2020-01-14 22:58:20.660927"], ["updated_at", "2020-01-14 22:58:20.660927"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Arkansas"], ["abbreviation", "AR"], ["created_at", "2020-01-14 22:58:20.663574"], ["updated_at", "2020-01-14 22:58:20.663574"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "California"], ["abbreviation", "CA"], ["created_at", "2020-01-14 22:58:20.666293"], ["updated_at", "2020-01-14 22:58:20.666293"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Colorado"], ["abbreviation", "CO"], ["created_at", "2020-01-14 22:58:20.668912"], ["updated_at", "2020-01-14 22:58:20.668912"], ["comment", ""]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Connecticut"], ["abbreviation", "CT"], ["created_at", "2020-01-14 22:58:20.671543"], ["updated_at", "2020-01-14 22:58:20.671543"], ["comment", ""]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Delaware"], ["abbreviation", "DE"], ["created_at", "2020-01-14 22:58:20.674112"], ["updated_at", "2020-01-14 22:58:20.674112"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Florida"], ["abbreviation", "FL"], ["created_at", "2020-01-14 22:58:20.676764"], ["updated_at", "2020-01-14 22:58:20.676764"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Georgia"], ["abbreviation", "GA"], ["created_at", "2020-01-14 22:58:20.679435"], ["updated_at", "2020-01-14 22:58:20.679435"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Hawaii"], ["abbreviation", "HI"], ["created_at", "2020-01-14 22:58:20.682019"], ["updated_at", "2020-01-14 22:58:20.682019"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Idaho"], ["abbreviation", "ID"], ["created_at", "2020-01-14 22:58:20.684559"], ["updated_at", "2020-01-14 22:58:20.684559"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Illinois"], ["abbreviation", "IL"], ["created_at", "2020-01-14 22:58:20.687131"], ["updated_at", "2020-01-14 22:58:20.687131"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Indiana"], ["abbreviation", "IN"], ["created_at", "2020-01-14 22:58:20.689716"], ["updated_at", "2020-01-14 22:58:20.689716"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Iowa"], ["abbreviation", "IA"], ["created_at", "2020-01-14 22:58:20.692278"], ["updated_at", "2020-01-14 22:58:20.692278"], ["comment", ""]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kansas"], ["abbreviation", "KS"], ["created_at", "2020-01-14 22:58:20.694706"], ["updated_at", "2020-01-14 22:58:20.694706"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kentucky"], ["abbreviation", "KY"], ["created_at", "2020-01-14 22:58:20.697565"], ["updated_at", "2020-01-14 22:58:20.697565"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Louisiana"], ["abbreviation", "LA"], ["created_at", "2020-01-14 22:58:20.700243"], ["updated_at", "2020-01-14 22:58:20.700243"], ["comment", ""]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Maine"], ["abbreviation", "ME"], ["created_at", "2020-01-14 22:58:20.702903"], ["updated_at", "2020-01-14 22:58:20.702903"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Maryland"], ["abbreviation", "MD"], ["created_at", "2020-01-14 22:58:20.705630"], ["updated_at", "2020-01-14 22:58:20.705630"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Massachusetts"], ["abbreviation", "MA"], ["created_at", "2020-01-14 22:58:20.708303"], ["updated_at", "2020-01-14 22:58:20.708303"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Michigan"], ["abbreviation", "MI"], ["created_at", "2020-01-14 22:58:20.710848"], ["updated_at", "2020-01-14 22:58:20.710848"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.4ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Minnesota"], ["abbreviation", "MN"], ["created_at", "2020-01-14 22:58:20.713353"], ["updated_at", "2020-01-14 22:58:20.713353"], ["comment", ""]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mississippi"], ["abbreviation", "MS"], ["created_at", "2020-01-14 22:58:20.725104"], ["updated_at", "2020-01-14 22:58:20.725104"], ["comment", ""]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Missouri"], ["abbreviation", "MO"], ["created_at", "2020-01-14 22:58:20.727916"], ["updated_at", "2020-01-14 22:58:20.727916"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Montana"], ["abbreviation", "MT"], ["created_at", "2020-01-14 22:58:20.731163"], ["updated_at", "2020-01-14 22:58:20.731163"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Nebraska"], ["abbreviation", "NE"], ["created_at", "2020-01-14 22:58:20.734659"], ["updated_at", "2020-01-14 22:58:20.734659"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Nevada"], ["abbreviation", "NV"], ["created_at", "2020-01-14 22:58:20.737208"], ["updated_at", "2020-01-14 22:58:20.737208"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "New Hampshire"], ["abbreviation", "NH"], ["created_at", "2020-01-14 22:58:20.739668"], ["updated_at", "2020-01-14 22:58:20.739668"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "New Jersey"], ["abbreviation", "NJ"], ["created_at", "2020-01-14 22:58:20.742170"], ["updated_at", "2020-01-14 22:58:20.742170"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "New Mexico"], ["abbreviation", "NM"], ["created_at", "2020-01-14 22:58:20.744606"], ["updated_at", "2020-01-14 22:58:20.744606"], ["comment", ""]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "New York"], ["abbreviation", "NY"], ["created_at", "2020-01-14 22:58:20.746883"], ["updated_at", "2020-01-14 22:58:20.746883"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "North Carolina"], ["abbreviation", "NC"], ["created_at", "2020-01-14 22:58:20.749374"], ["updated_at", "2020-01-14 22:58:20.749374"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "North Dakota"], ["abbreviation", "ND"], ["created_at", "2020-01-14 22:58:20.751776"], ["updated_at", "2020-01-14 22:58:20.751776"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ohio"], ["abbreviation", "OH"], ["created_at", "2020-01-14 22:58:20.754235"], ["updated_at", "2020-01-14 22:58:20.754235"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Oklahoma"], ["abbreviation", "OK"], ["created_at", "2020-01-14 22:58:20.756638"], ["updated_at", "2020-01-14 22:58:20.756638"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Oregon"], ["abbreviation", "OR"], ["created_at", "2020-01-14 22:58:20.759040"], ["updated_at", "2020-01-14 22:58:20.759040"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Pennsylvania"], ["abbreviation", "PA"], ["created_at", "2020-01-14 22:58:20.761457"], ["updated_at", "2020-01-14 22:58:20.761457"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Rhode Island"], ["abbreviation", "RI"], ["created_at", "2020-01-14 22:58:20.763877"], ["updated_at", "2020-01-14 22:58:20.763877"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "South Carolina"], ["abbreviation", "SC"], ["created_at", "2020-01-14 22:58:20.766190"], ["updated_at", "2020-01-14 22:58:20.766190"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "South Dakota"], ["abbreviation", "SD"], ["created_at", "2020-01-14 22:58:20.768592"], ["updated_at", "2020-01-14 22:58:20.768592"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tennessee"], ["abbreviation", "TN"], ["created_at", "2020-01-14 22:58:20.771029"], ["updated_at", "2020-01-14 22:58:20.771029"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Texas"], ["abbreviation", "TX"], ["created_at", "2020-01-14 22:58:20.773567"], ["updated_at", "2020-01-14 22:58:20.773567"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Utah"], ["abbreviation", "UT"], ["created_at", "2020-01-14 22:58:20.776035"], ["updated_at", "2020-01-14 22:58:20.776035"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Vermont"], ["abbreviation", "VT"], ["created_at", "2020-01-14 22:58:20.778725"], ["updated_at", "2020-01-14 22:58:20.778725"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.3ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Virginia"], ["abbreviation", "VA"], ["created_at", "2020-01-14 22:58:20.781321"], ["updated_at", "2020-01-14 22:58:20.781321"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Washington"], ["abbreviation", "WA"], ["created_at", "2020-01-14 22:58:20.784024"], ["updated_at", "2020-01-14 22:58:20.784024"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "West Virginia"], ["abbreviation", "WV"], ["created_at", "2020-01-14 22:58:20.786497"], ["updated_at", "2020-01-14 22:58:20.786497"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Wisconsin"], ["abbreviation", "WI"], ["created_at", "2020-01-14 22:58:20.788913"], ["updated_at", "2020-01-14 22:58:20.788913"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mState Create (0.2ms)[0m  [1m[32mINSERT INTO "states" ("name", "abbreviation", "created_at", "updated_at", "comment") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Wyoming"], ["abbreviation", "WY"], ["created_at", "2020-01-14 22:58:20.791334"], ["updated_at", "2020-01-14 22:58:20.791334"], ["comment", ""]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/states" for ::1 at 2020-01-14 17:35:27 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StatesController#index as */*
+  [1m[36mState Load (3.2ms)[0m  [1m[34mSELECT "states".* FROM "states"[0m
+  ↳ app/controllers/states_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 22.9ms | ActiveRecord: 23.3ms | Allocations: 12525)
+
+
+Started GET "/states/4" for ::1 at 2020-01-14 17:35:37 -0600
+Processing by StatesController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mState Load (0.5ms)[0m  [1m[34mSELECT "states".* FROM "states" WHERE "states"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/states_controller.rb:9:in `show'
+  [1m[36mComment Load (1.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."state_id" = $1[0m  [["state_id", 4]]
+  ↳ app/controllers/states_controller.rb:10:in `show'
+Completed 200 OK in 27ms (Views: 19.1ms | ActiveRecord: 4.4ms | Allocations: 6816)
+
+
